@@ -29,6 +29,9 @@
     <ClInclude Include="Game\Field.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="GameOver\GameOver.h">
+      <Filter>GameOver</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -59,6 +62,9 @@
     <ClCompile Include="Game\Field.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="GameOver\GameOver.cpp">
+      <Filter>GameOver</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -72,6 +78,9 @@
     </Filter>
     <Filter Include="Title">
       <UniqueIdentifier>{7f4304f2-0b56-4841-8d52-bf1674001c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameOver">
+      <UniqueIdentifier>{8802a127-dbb0-4031-8c54-2295ec540b2d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

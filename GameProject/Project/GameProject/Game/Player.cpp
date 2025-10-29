@@ -1,6 +1,7 @@
 #include"Player.h"
 #include"Map.h"
 #include"Enemy.h"
+#include"Game.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
@@ -71,7 +72,10 @@ void Player::Update()
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
 
-
+	if (m_ground_y < 0) 
+	{
+		Base::SetKill();
+	}
 	//ƒXƒNƒ[ƒ‹Ý’è
 	m_scroll.x = m_pos.x - 1960 / 2;
 }
@@ -85,7 +89,7 @@ void Player::Draw()
 
 void Player::Takedamge(int dmg)
 {
-	
+
 }
 
 void Player::Collision(Base* b)

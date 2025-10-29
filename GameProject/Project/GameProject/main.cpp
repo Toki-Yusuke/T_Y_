@@ -90,7 +90,7 @@ void Init(void)
 	ADD_RESOURCE("Player", CImage::CreateImage("Image/Character/Player.png"));
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Character/Enemy.png"));
 	ADD_RESOURCE("Haikei", CImage::CreateImage("Image/Field/Title.Haikei.png"));
-	ADD_RESOURCE("Haikei1", CImage::CreateImage("Image/Field/Title.Haikei.png"));
+	ADD_RESOURCE("Over_Logo", CImage::CreateImage("Image/Field/GameOver1.png"));
 	ADD_RESOURCE("Map_Tip1", CImage::CreateImage("Image/Field/Map1.png"));
 
 

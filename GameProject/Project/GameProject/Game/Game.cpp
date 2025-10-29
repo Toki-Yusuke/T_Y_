@@ -3,6 +3,7 @@
 #include"Enemy.h"
 #include"Map.h"
 #include"Field.h"
+#include"../GameOver/GameOver.h"
 
 Game::Game():Base(eType_Scene)
 {
@@ -10,9 +11,14 @@ Game::Game():Base(eType_Scene)
 	Base::Add(new Enemy(CVector2D(600, 785), true));
 	Base::Add(new Field);
 	Base::Add(new Map(1));
+	m_GameState = 0;
 }
 
 void Game::Update() 
 {
-
+	if (!Base::FindObject(eType_Player))
+	{
+		Base::KillAll();
+		Base::Add(new GameOver);
+	}
 }

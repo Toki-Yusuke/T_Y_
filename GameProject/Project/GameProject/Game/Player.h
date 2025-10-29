@@ -12,6 +12,7 @@ class Player :public Base
 	CImage m_img;
 	bool m_flip;
 	bool m_is_ground;
+	float m_ground_y;
 	//ó‘Ô
 	enum {
 		eState_Idle,
@@ -26,4 +27,7 @@ public:
 	void Draw();
 	void Takedamge(int dmg);
 	void Collision(Base* b);
+	float GetGroundY() {
+		return m_ground_y;
+	};
 };

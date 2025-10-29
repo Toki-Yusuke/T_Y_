@@ -39,7 +39,6 @@ void Enemy::StateIdle()
 			//待機アニメーション
 			m_img.ChangeAnimation(eAnimIdle);
 	}
-	
 }
 
 
@@ -97,4 +96,18 @@ void Enemy::Collision(Base* b)
 		}
 		break;
 	}
+	switch (b->m_type) {
+		//敵との判定
+	case eType_Enemy:
+		if (m_type == eType_Player_Attack) {
+			//Enemy型へキャスト、型変換できたら
+			if (Enemy* e = dynamic_cast<Enemy*>(b)) {
+				if (Base::CollisionRect(this, b)) {
+					e->Takedamage(1);
+				}
+			}
+		}
+		break;
+	}
+
 }

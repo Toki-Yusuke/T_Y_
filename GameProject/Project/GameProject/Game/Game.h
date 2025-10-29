@@ -3,6 +3,7 @@
 
 class Game:public Base
 {
+	int m_GameState;
 public:
 	Game();
 	void Update();
