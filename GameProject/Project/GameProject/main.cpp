@@ -1,8 +1,5 @@
 #include"Base/Base.h"
-#include"Game/Player.h"
-#include"Game/Enemy.h"
 #include"Title/Title.h"
-#include"Game/Map.h"
 
 
 void MainLoop(void) {
@@ -87,18 +84,30 @@ void Init(void)
 	//初期化の命令を書く
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
+	//プレイヤー
 	ADD_RESOURCE("Player", CImage::CreateImage("Image/Character/Player.png"));
+	//敵
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Character/Enemy.png"));
-	ADD_RESOURCE("Haikei", CImage::CreateImage("Image/Field/Title.Haikei.png"));
+	//フィールドの背景
+	ADD_RESOURCE("f_Haikei", CImage::CreateImage("Image/Field/Title.Haikei.png"));
+	//タイトル
+	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title/Title_Logo.png"));
+	//タイトルの背景
+	ADD_RESOURCE("t_Haikei", CImage::CreateImage("Image/Title/Title.Haikei.png"));
+	//タイトルの文字
+	ADD_RESOURCE("Moji", CImage::CreateImage("Image/Title/Title_Moji.png"));
+	//ゲームオーバー画面の文字
 	ADD_RESOURCE("Over_Logo", CImage::CreateImage("Image/Field/GameOver1.png"));
+	//マップチップ
 	ADD_RESOURCE("Map_Tip1", CImage::CreateImage("Image/Field/Map1.png"));
+	//ゴール
+	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Field/Goal.png"));
+	//ギミック(棘)
+	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));
 
 
-
-
-
-	Base::Add(new Title());
 	
+	Base::Add(new Title());
 }
 
 

@@ -2,6 +2,7 @@
 #include"Map.h"
 #include"Enemy.h"
 #include"Game.h"
+#include"Sting.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
@@ -71,13 +72,9 @@ void Player::Update()
 	//重力による落下
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
-
-	if (m_ground_y < 0) 
-	{
-		Base::SetKill();
-	}
 	//スクロール設定
 	m_scroll.x = m_pos.x - 1960 / 2;
+	m_scroll.y = m_pos.y - 1080 / 2;
 }
 
 void Player::Draw() 
@@ -119,5 +116,13 @@ void Player::Collision(Base* b)
 			b->SetKill();
 		}
 		break;
-	}	
+	case eType_Object:
+		if (Base::CollisionRect(this, b))
+		{
+			this->SetKill();
+			b->SetKill();
+		}
+		break;
+	}
+	
 }

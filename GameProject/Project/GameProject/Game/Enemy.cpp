@@ -18,8 +18,28 @@ void Enemy::StateIdle()
 {
 
 	bool move_flag = false;
-	const float move_speed = 2;
-	m_pos.x += move_speed;
+	const float move_speed = 3.5;
+	//移動
+	Base* player = Base::FindObject(eType_Player);
+	if (player) {
+		//左移動
+		if (player->m_pos.x < m_pos.x - 64) {
+			//移動量を設定
+			m_pos.x += -move_speed;
+			//反転フラグ
+			m_flip = true;
+			move_flag = true;
+		}
+		//右移動
+		else{ 
+			//移動量を設定
+			m_pos.x += move_speed;
+			//反転フラグ
+			m_flip = false;
+			move_flag = true;
+		}
+
+	}
 	//ジャンプ中なら
 	if (!m_is_ground) {
 		if (m_vec.y < 0)
@@ -96,18 +116,4 @@ void Enemy::Collision(Base* b)
 		}
 		break;
 	}
-	switch (b->m_type) {
-		//敵との判定
-	case eType_Enemy:
-		if (m_type == eType_Player_Attack) {
-			//Enemy型へキャスト、型変換できたら
-			if (Enemy* e = dynamic_cast<Enemy*>(b)) {
-				if (Base::CollisionRect(this, b)) {
-					e->Takedamage(1);
-				}
-			}
-		}
-		break;
-	}
-
 }

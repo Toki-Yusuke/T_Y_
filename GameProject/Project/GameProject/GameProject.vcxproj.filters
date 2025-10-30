@@ -14,7 +14,7 @@
     <ClInclude Include="Game\Player.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Gimic.h">
+    <ClInclude Include="Game\Sting.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\Map.h">
@@ -32,6 +32,9 @@
     <ClInclude Include="GameOver\GameOver.h">
       <Filter>GameOver</Filter>
     </ClInclude>
+    <ClInclude Include="Game\Goal.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -47,7 +50,7 @@
     <ClCompile Include="Game\Player.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Gimic.cpp">
+    <ClCompile Include="Game\Sting.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="Game\Map.cpp">
@@ -64,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="GameOver\GameOver.cpp">
       <Filter>GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Goal.cpp">
+      <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

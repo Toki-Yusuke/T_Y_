@@ -27,7 +27,4 @@ public:
 	void Draw();
 	void Takedamge(int dmg);
 	void Collision(Base* b);
-	float GetGroundY() {
-		return m_ground_y;
-	};
 };

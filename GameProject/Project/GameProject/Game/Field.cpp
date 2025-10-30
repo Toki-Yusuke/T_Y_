@@ -2,7 +2,7 @@
 
 Field::Field():Base(eType_Field)
 {
-	m_Haikei = COPY_RESOURCE("Haikei", CImage);
+	m_Haikei = COPY_RESOURCE("f_Haikei", CImage);
 }
 
 void Field::Update() 

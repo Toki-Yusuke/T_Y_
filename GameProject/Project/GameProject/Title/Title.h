@@ -3,9 +3,9 @@
 
 class Title:public Base
 {
-	CImage m_img;
-	CImage m_Title;
-	CImage m_Moji;
+	CImage m_haikei;
+	CImage m_title;
+	CImage m_moji;
 	int m_cnt;
 public:
 	Title();

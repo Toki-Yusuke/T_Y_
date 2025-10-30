@@ -3,8 +3,9 @@
 
 class GameOver :public Base 
 {
-	CImage m_Haikei;
-	CImage m_Logo;
+	CImage m_haikei;
+	CImage m_logo;
+	CImage m_moji;
 public:
 	GameOver();
 	void Update();
