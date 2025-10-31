@@ -11,6 +11,7 @@ enum {
     eType_Clear,
     eType_Player,
     eType_Object,
+    eType_Word,
 };
 
 //d—Í‰Á‘¬“x

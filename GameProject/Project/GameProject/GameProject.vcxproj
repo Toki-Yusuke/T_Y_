@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
     <ClInclude Include="GameOver\GameOver.h" />
+    <ClInclude Include="Game\Bom.h" />
     <ClInclude Include="Game\Enemy.h" />
     <ClInclude Include="Game\Field.h" />
     <ClInclude Include="Game\Game.h" />
@@ -28,6 +29,7 @@
     <ClInclude Include="Game\Goal.h" />
     <ClInclude Include="Game\Map.h" />
     <ClInclude Include="Game\Player.h" />
+    <ClInclude Include="Game\Word01.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="ss\ss.h" />
     <ClInclude Include="Title\Title.h" />
@@ -35,6 +37,7 @@
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
     <ClCompile Include="GameOver\GameOver.cpp" />
+    <ClCompile Include="Game\Bom.cpp" />
     <ClCompile Include="Game\Enemy.cpp" />
     <ClCompile Include="Game\Field.cpp" />
     <ClCompile Include="Game\Game.cpp" />
@@ -42,6 +45,7 @@
     <ClCompile Include="Game\Goal.cpp" />
     <ClCompile Include="Game\Map.cpp" />
     <ClCompile Include="Game\Player.cpp" />
+    <ClCompile Include="Game\Word01.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ss\ss.cpp" />
     <ClCompile Include="Title\Title.cpp" />

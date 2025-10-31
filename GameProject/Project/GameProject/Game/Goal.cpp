@@ -21,12 +21,12 @@ void Goal::Draw()
 	DrawRect();
 }
 
-void Goal::Collision(Base * b)
+void Goal::Collision(Base* b) 
 {
-	switch (b->m_type) 
+	switch (b->m_type)
 	{
 	case eType_Player:
-		if (Base::CollisionRect(this, b)) 
+		if (Base::CollisionRect(this, b))
 		{
 			this->SetKill();
 			b->SetKill();

@@ -1,16 +1,17 @@
 #include "Sting.h"
 
-Sting::Sting(const CVector2D&pos):Base(eType_Object)
+Sting::Sting(const CVector2D & pos):Base(eType_Enemy)
 {
 	m_sting = COPY_RESOURCE("Sting", CImage);
-	m_pos = pos;
+	m_sting.SetCenter(0, 0); 
 	m_sting.SetSize(96, 96);
-	m_sting.SetCenter(48, 0);
-	m_rect = CRect(-48, 96, 48, 0);
+	m_pos = pos;
+	m_rect = CRect(0, 0, 96, 96);
 }
 
 void Sting::Update() 
 {
+
 }
 
 void Sting::Draw() 
@@ -22,4 +23,12 @@ void Sting::Draw()
 
 void Sting::Collision(Base* b) 
 {
+	switch (m_type) 
+	{
+	case eType_Player:
+		if (Base::CollisionRect(this, b)) 
+		{
+			b->SetKill();
+		}
+	}
 }

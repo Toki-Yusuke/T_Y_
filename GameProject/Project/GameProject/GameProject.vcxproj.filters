@@ -35,6 +35,12 @@
     <ClInclude Include="Game\Goal.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="Game\Word01.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Bom.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -69,6 +75,12 @@
       <Filter>GameOver</Filter>
     </ClCompile>
     <ClCompile Include="Game\Goal.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Word01.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Bom.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
