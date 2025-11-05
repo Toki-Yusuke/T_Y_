@@ -3,6 +3,7 @@
 #include"Enemy.h"
 #include"Game.h"
 #include"Sting.h"
+#include"Bom.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
@@ -91,9 +92,11 @@ void Player::Takedamge(int dmg)
 
 void Player::Collision(Base* b)
 {
+
 	switch (b->m_type) {
 	case eType_Field:
-		if (Map* m = dynamic_cast<Map*>(b)) {
+		if (Map* m = dynamic_cast<Map*>(b))
+		{
 			int t;
 			t = m->CollisionRect(CVector2D(m_pos.x, m_pos_old.y), m_rect);
 			if (t != 0) {
@@ -117,11 +120,10 @@ void Player::Collision(Base* b)
 		}
 		break;
 	case eType_Word:
-		if (Base::CollisionRect(this, b)) 
+		if (Base::CollisionRect(this, b))
 		{
 			b->SetKill();
 		}
-	break;
+		break;
 	}
-	
 }
