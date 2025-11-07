@@ -5,6 +5,7 @@
 #include"../Gimic/Sting.h"
 #include"../Gimic/Bom.h"
 #include"../Gimic/B_rock.h"
+#include"../Gimic/R_botton.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
@@ -133,6 +134,12 @@ void Player::Collision(Base* b)
 		}
 		break;
 	case eType_B_botton:
+		if (Base::CollisionRect(this, b))
+		{
+			b->SetKill();
+		}
+		break;
+	case eType_R_botton:
 		if (Base::CollisionRect(this, b))
 		{
 			b->SetKill();

@@ -19,11 +19,6 @@ void B_wall::Draw()
 	DrawRect();
 }
 
-void B_wall::BotoonOn() 
-{
-
-}
-
 void B_wall::Collision(Base* b) 
 {
 }

@@ -4,9 +4,9 @@ Sting::Sting(const CVector2D & pos):Base(eType_Enemy)
 {
 	m_sting = COPY_RESOURCE("Sting", CImage);
 	m_sting.SetCenter(0, 0); 
-	m_sting.SetSize(72, 72);
+	m_sting.SetSize(82, 82);
 	m_pos = pos;
-	m_rect = CRect(0, 0, 72, 72);
+	m_rect = CRect(0, 0, 82, 82);
 }
 
 void Sting::Update() 

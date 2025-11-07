@@ -10,5 +10,6 @@ public:
 	void Update();
 	void Draw();
 	void Move();
+	void B_Effect();
 	void Collision(Base* b);
 };

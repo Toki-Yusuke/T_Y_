@@ -1,6 +1,7 @@
 #include "Bom.h"
 #include"../Game/Map.h"
 #include"../Game/Player.h"
+#include"../Game/Effect.h"
 
 Bom::Bom(const CVector2D& pos):Base(eType_Item)
 {
@@ -44,6 +45,11 @@ void Bom::Move()
 	}
 }
 
+void Bom::B_Effect() 
+{
+	Base::Add(new Effect("Effect", m_pos + CVector2D(0, 0)));
+}
+
 void Bom::Collision(Base* b) 
 {
 	switch (b->m_type) {
@@ -75,6 +81,7 @@ void Bom::Collision(Base* b)
 		{
 			this->SetKill();
 			b->SetKill();
+			this->B_Effect();
 		}
 	}
 }
