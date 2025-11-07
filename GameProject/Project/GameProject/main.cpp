@@ -102,13 +102,23 @@ void Init(void)
 	ADD_RESOURCE("Map_Tip1", CImage::CreateImage("Image/Field/Map1.png"));
 	//ゴール
 	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Field/Goal.png"));
-	//ギミック(棘)
+	//棘
 	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));
 	//単語01
 	ADD_RESOURCE("Word01", CImage::CreateImage("Image/Gimic/Word01.png"));
 	//爆弾
 	ADD_RESOURCE("Bom", CImage::CreateImage("Image/Gimic/Bom.png"));
-	
+	//壊れる岩
+	ADD_RESOURCE("B_rock", CImage::CreateImage("Image/Gimic/B_rock.png"));
+	//青ボタン
+	ADD_RESOURCE("B_botton", CImage::CreateImage("Image/Gimic/B_botton.png"));
+	//赤ボタン
+	ADD_RESOURCE("R_botton", CImage::CreateImage("Image/Gimic/R_botton.png"));
+	//青壁
+	ADD_RESOURCE("B_wall", CImage::CreateImage("Image/Gimic/B_wall.png"));
+	//赤壁
+	ADD_RESOURCE("R_wall", CImage::CreateImage("Image/Gimic/R_wall.png"));
+
 	Base::Add(new Title());
 }
 

@@ -1,6 +1,8 @@
 #include "Title.h"
 #include"../Game/Game.h"
 
+#include"../Gimic/Gimic.h"
+
 Title::Title():Base(eType_Scene)
 {
 	m_haikei = COPY_RESOURCE("t_Haikei", CImage);
@@ -18,6 +20,7 @@ void Title::Update()
 	if (m_cnt++>2 && PUSH(CInput::eButton1)) {
 		Base::KillAll();
 		Base::Add(new Game());
+		Base::Add(new Gimic());
 	}
 }
 

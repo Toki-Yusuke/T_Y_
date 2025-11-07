@@ -23,11 +23,4 @@ void Word01::Draw()
 
 void Word01::Collision(Base* b) 
 {
-	switch (m_type) {
-	case eType_Player:
-		if (Base::CollisionRect(this, b)) 
-		{
-			this->SetKill();
-		}
-	}
 }

@@ -14,9 +14,6 @@
     <ClInclude Include="Game\Player.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Sting.h">
-      <Filter>Game</Filter>
-    </ClInclude>
     <ClInclude Include="Game\Map.h">
       <Filter>Game</Filter>
     </ClInclude>
@@ -38,7 +35,31 @@
     <ClInclude Include="Game\Word01.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Bom.h">
+    <ClInclude Include="Gimic\Gimic.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\B_botton.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\B_rock.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\Bom.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\R_botton.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\Sting.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\B_wall.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimic\R_wall.h">
+      <Filter>Gimic</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Effect.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,16 +68,10 @@
     <ClCompile Include="Base\Base.cpp">
       <Filter>Base</Filter>
     </ClCompile>
-    <ClCompile Include="ss\ss.cpp">
-      <Filter>ss</Filter>
-    </ClCompile>
     <ClCompile Include="Game\Enemy.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="Game\Player.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Sting.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="Game\Map.cpp">
@@ -80,7 +95,34 @@
     <ClCompile Include="Game\Word01.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Bom.cpp">
+    <ClCompile Include="ss\ss.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\Gimic.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\B_botton.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\B_rock.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\Bom.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\R_botton.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\Sting.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\B_wall.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimic\R_wall.cpp">
+      <Filter>Gimic</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Effect.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
@@ -99,6 +141,9 @@
     </Filter>
     <Filter Include="GameOver">
       <UniqueIdentifier>{8802a127-dbb0-4031-8c54-2295ec540b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gimic">
+      <UniqueIdentifier>{7d2c6cca-a154-4a8d-814a-ff7329075c7c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

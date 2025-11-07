@@ -2,8 +2,9 @@
 #include"Map.h"
 #include"Enemy.h"
 #include"Game.h"
-#include"Sting.h"
-#include"Bom.h"
+#include"../Gimic/Sting.h"
+#include"../Gimic/Bom.h"
+#include"../Gimic/B_rock.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
@@ -112,6 +113,12 @@ void Player::Collision(Base* b)
 			}
 		}
 		break;
+	case eType_Object:
+		if (Base::CollisionRect(this, b))
+		{
+			this->m_pos.x = m_pos_old.x;
+		}
+		break;
 	case eType_Enemy:
 		if (Base::CollisionRect(this, b))
 		{
@@ -123,6 +130,21 @@ void Player::Collision(Base* b)
 		if (Base::CollisionRect(this, b))
 		{
 			b->SetKill();
+		}
+		break;
+	case eType_B_botton:
+		if (Base::CollisionRect(this, b))
+		{
+			b->SetKill();
+		}
+		break;
+	case eType_B_wall:
+		if (Base::CollisionRect(this, b))
+		{
+			this->m_pos.x = m_pos_old.x;
+			this->m_pos.y = m_pos_old.y;
+			m_vec.y = 0;
+			m_is_ground = true;
 		}
 		break;
 	}

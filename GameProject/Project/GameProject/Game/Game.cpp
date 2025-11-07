@@ -4,9 +4,7 @@
 #include"Map.h"
 #include"Field.h"
 #include"Goal.h"
-#include"Sting.h"
 #include"Word01.h"
-#include"Bom.h"
 #include"../GameOver/GameOver.h"
 #include"../ss/ss.h"
 
@@ -15,10 +13,8 @@ Game::Game():Base(eType_Scene)
 	Base::Add(new Player(CVector2D(100, 785), true));
 	Base::Add(new Enemy(CVector2D(600, 785), true));
 	Base::Add(new Enemy(CVector2D(2000, 785), true));
-	Base::Add(new Sting(CVector2D(800, 785)));
 	Base::Add(new Goal(CVector2D(2550, 1200)));
 	Base::Add(new Word01(CVector2D(650, 835)));
-	Base::Add(new Bom(CVector2D(3000, 763)));
 	Base::Add(new Field);
 	Base::Add(new Map(1));
 }

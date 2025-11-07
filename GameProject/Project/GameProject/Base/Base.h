@@ -12,6 +12,10 @@ enum {
     eType_Player,
     eType_Object,
     eType_Word,
+    eType_B_botton,
+    eType_R_botton,
+    eType_B_wall,
+    eType_R_wall,
 };
 
 //èdóÕâ¡ë¨ìx
