@@ -1,6 +1,7 @@
 #pragma once
 #include"../Base/Base.h"
-class Effect :public Base {
+class Effect :public Base 
+{
 private:
 	CImage m_img;
 public:

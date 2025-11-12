@@ -3,7 +3,8 @@
 
 class Enemy :public Base
 {
-	enum {
+	enum 
+	{
 		eAnimIdle = 0,
 		eAnimRun,
 		eAnimJumpUp,
@@ -13,7 +14,8 @@ class Enemy :public Base
 	bool m_flip;
 	bool m_is_ground;
 	//ó‘Ô
-	enum {
+	enum 
+	{
 		eState_Idle,
 	};
 	//ó‘Ô•Ï”

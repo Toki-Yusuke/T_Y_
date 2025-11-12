@@ -1,16 +1,16 @@
 #include "ss.h"
 
-SS::SS():Base(eType_Scene)
+ss::ss():Base(eType_Scene)
 {
 
 }
 
-void SS::Update() 
+void ss::Update() 
 {
 
 }
 
-void SS::Draw() 
+void ss::Draw() 
 {
 
 }

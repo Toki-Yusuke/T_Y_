@@ -62,6 +62,39 @@
     <ClInclude Include="Game\Effect.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="ss\ss_w01.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w02.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w03.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w04.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w05.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w06.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w07.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w08.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="ss\ss_w09.h">
+      <Filter>ss</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Word02.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Word03.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -123,6 +156,39 @@
       <Filter>Gimic</Filter>
     </ClCompile>
     <ClCompile Include="Game\Effect.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w01.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w02.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w03.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w04.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w05.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w06.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w07.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w08.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w09.cpp">
+      <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Word02.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Word03.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>

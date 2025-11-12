@@ -29,6 +29,8 @@
     <ClInclude Include="Game\Map.h" />
     <ClInclude Include="Game\Player.h" />
     <ClInclude Include="Game\Word01.h" />
+    <ClInclude Include="Game\Word02.h" />
+    <ClInclude Include="Game\Word03.h" />
     <ClInclude Include="Gimic\Bom.h" />
     <ClInclude Include="Gimic\B_botton.h" />
     <ClInclude Include="Gimic\B_rock.h" />
@@ -39,6 +41,15 @@
     <ClInclude Include="Gimic\Sting.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="ss\ss.h" />
+    <ClInclude Include="ss\ss_w01.h" />
+    <ClInclude Include="ss\ss_w02.h" />
+    <ClInclude Include="ss\ss_w03.h" />
+    <ClInclude Include="ss\ss_w04.h" />
+    <ClInclude Include="ss\ss_w05.h" />
+    <ClInclude Include="ss\ss_w06.h" />
+    <ClInclude Include="ss\ss_w07.h" />
+    <ClInclude Include="ss\ss_w08.h" />
+    <ClInclude Include="ss\ss_w09.h" />
     <ClInclude Include="Title\Title.h" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +63,8 @@
     <ClCompile Include="Game\Map.cpp" />
     <ClCompile Include="Game\Player.cpp" />
     <ClCompile Include="Game\Word01.cpp" />
+    <ClCompile Include="Game\Word02.cpp" />
+    <ClCompile Include="Game\Word03.cpp" />
     <ClCompile Include="Gimic\Bom.cpp" />
     <ClCompile Include="Gimic\B_botton.cpp" />
     <ClCompile Include="Gimic\B_rock.cpp" />
@@ -62,6 +75,15 @@
     <ClCompile Include="Gimic\Sting.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ss\ss.cpp" />
+    <ClCompile Include="ss\ss_w01.cpp" />
+    <ClCompile Include="ss\ss_w02.cpp" />
+    <ClCompile Include="ss\ss_w03.cpp" />
+    <ClCompile Include="ss\ss_w04.cpp" />
+    <ClCompile Include="ss\ss_w05.cpp" />
+    <ClCompile Include="ss\ss_w06.cpp" />
+    <ClCompile Include="ss\ss_w07.cpp" />
+    <ClCompile Include="ss\ss_w08.cpp" />
+    <ClCompile Include="ss\ss_w09.cpp" />
     <ClCompile Include="Title\Title.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

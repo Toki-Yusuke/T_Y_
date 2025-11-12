@@ -104,6 +104,10 @@ void Init(void)
 	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Field/Goal.png"));
 	//単語01
 	ADD_RESOURCE("Word01", CImage::CreateImage("Image/Gimic/Word01.png"));
+	//単語02
+	ADD_RESOURCE("Word02", CImage::CreateImage("Image/Gimic/Word02.png"));
+	//単語03
+	ADD_RESOURCE("Word03", CImage::CreateImage("Image/Gimic/Word03.png"));
 	//以下ギミック
 	//棘
 	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));

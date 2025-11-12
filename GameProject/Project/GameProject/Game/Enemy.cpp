@@ -21,9 +21,11 @@ void Enemy::StateIdle()
 	const float move_speed = 3.5;
 	//移動
 	Base* player = Base::FindObject(eType_Player);
-	if (player) {
+	if (player) 
+	{
 		//左移動
-		if (player->m_pos.x < m_pos.x - 64) {
+		if (player->m_pos.x < m_pos.x + 40)
+		{
 			//移動量を設定
 			m_pos.x += -move_speed;
 			//反転フラグ
@@ -31,7 +33,8 @@ void Enemy::StateIdle()
 			move_flag = true;
 		}
 		//右移動
-		else{ 
+		else
+		{ 
 			//移動量を設定
 			m_pos.x += move_speed;
 			//反転フラグ
@@ -41,7 +44,8 @@ void Enemy::StateIdle()
 
 	}
 	//ジャンプ中なら
-	if (!m_is_ground) {
+	if (!m_is_ground) 
+	{
 		if (m_vec.y < 0)
 			//上昇アニメーション
 			m_img.ChangeAnimation(eAnimJumpUp, false);
@@ -65,7 +69,8 @@ void Enemy::StateIdle()
 void Enemy::Update()
 {
 	m_pos_old = m_pos;
-	switch (m_state) {
+	switch (m_state) 
+	{
 		//通常状態
 	case eState_Idle:
 		StateIdle();
@@ -77,8 +82,6 @@ void Enemy::Update()
 	//重力による落下
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
-
-
 	//スクロール設定
 	m_scroll.x = m_pos.x - 1960 / 2;
 }
@@ -92,21 +95,24 @@ void Enemy::Draw()
 
 void Enemy::Takedamage(int dmg)
 {
-
 }
 
 void Enemy::Collision(Base* b)
 {
-	switch (b->m_type) {
+	switch (b->m_type) 
+	{
 	case eType_Field:
-		if (Map* m = dynamic_cast<Map*>(b)) {
+		if (Map* m = dynamic_cast<Map*>(b)) 
+		{
 			int t;
 			t = m->CollisionRect(CVector2D(m_pos.x, m_pos_old.y), m_rect);
-			if (t != 0) {
+			if (t != 0) 
+			{
 				m_pos.x = m_pos_old.x;
 			}
 			t = m->CollisionRect(CVector2D(m_pos_old.x, m_pos.y), m_rect);
-			if (t != 0) {
+			if (t != 0) 
+			{
 				m_pos.y = m_pos_old.y;
 				//落下速度リセット
 				m_vec.y = 0;

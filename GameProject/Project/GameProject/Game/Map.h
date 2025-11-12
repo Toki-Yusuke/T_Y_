@@ -7,7 +7,8 @@
 #define MAP_HEIGHT	400
 //マップチップの大きさ
 #define MAP_TIP_SIZE	98
-class Map : public Base {
+class Map : public Base 
+{
 private:
 	CImage m_img;
 	float m_ground_y;

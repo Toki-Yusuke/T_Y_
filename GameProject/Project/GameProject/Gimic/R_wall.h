@@ -9,5 +9,4 @@ public:
 	void Update();
 	void Draw();
 	void Collision(Base* b);
-	void BotoonOn();
 };

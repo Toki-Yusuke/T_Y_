@@ -1,10 +1,10 @@
 #pragma once
 #include"../Base/Base.h"
 
-class SS:public Base
+class ss:public Base
 {
 public:
-	SS();
+	ss();
 	void Update();
 	void Draw();
 };

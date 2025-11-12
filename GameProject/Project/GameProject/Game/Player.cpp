@@ -2,21 +2,17 @@
 #include"Map.h"
 #include"Enemy.h"
 #include"Game.h"
-#include"../Gimic/Sting.h"
-#include"../Gimic/Bom.h"
-#include"../Gimic/B_rock.h"
-#include"../Gimic/R_botton.h"
 
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
 	m_img = COPY_RESOURCE("Player", CImage);
 	m_img.SetSize(80, 80);
-	m_img.SetCenter(0, 0);
+	m_img.SetCenter(40, 0);
 	m_pos_old = m_pos = pos;
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//当たり判定用矩形設定
-	m_rect = CRect(24, 0, 72, 92);
+	m_rect = CRect(-14, 0, 24, 92);
 }
 
 void Player::StateIdle()
@@ -35,12 +31,14 @@ void Player::StateIdle()
 	{
 		m_pos.x += move_speed;
 	}
-	if (m_is_ground && PUSH(CInput::eButton5)) {
+	if (m_is_ground && PUSH(CInput::eButton5)) 
+	{
 		m_vec.y = -jump_pow;
 		m_is_ground = false;
 	}
 	//ジャンプ中なら
-	if (!m_is_ground) {
+	if (!m_is_ground) 
+	{
 		if (m_vec.y < 0)
 			//上昇アニメーション
 			m_img.ChangeAnimation(eAnimJumpUp, false);
@@ -63,7 +61,8 @@ void Player::StateIdle()
 void Player::Update() 
 {
 	m_pos_old = m_pos;
-	switch (m_state) {
+	switch (m_state) 
+	{
 		//通常状態
 	case eState_Idle:
 		StateIdle();
@@ -89,7 +88,6 @@ void Player::Draw()
 
 void Player::Takedamge(int dmg)
 {
-
 }
 
 void Player::Collision(Base* b)
@@ -144,7 +142,6 @@ void Player::Collision(Base* b)
 		{
 			b->SetKill();
 		}
-		break;
 	case eType_B_wall:
 		if (Base::CollisionRect(this, b))
 		{
@@ -152,6 +149,12 @@ void Player::Collision(Base* b)
 			this->m_pos.y = m_pos_old.y;
 			m_vec.y = 0;
 			m_is_ground = true;
+		}
+		break;
+	case eType_R_wall:
+		if (Base::CollisionRect(this, b))
+		{
+			this->m_pos.x = m_pos_old.x;
 		}
 		break;
 	}

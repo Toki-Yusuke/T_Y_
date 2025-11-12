@@ -1,6 +1,7 @@
 #include "Effect.h"
 
-static TexAnim _bomb_anim[] = {
+static TexAnim _bomb_anim[] = 
+{
 
             { 0,2 },
             { 1,2 },
@@ -8,11 +9,13 @@ static TexAnim _bomb_anim[] = {
             { 3,2 },
             { 4,2 },
 };
-TexAnimData Effect:: _bomb_anim_data[] = {
+TexAnimData Effect:: _bomb_anim_data[] = 
+{
         ANIMDATA(_bomb_anim),
 };
 
-Effect::Effect(const char*name, const CVector2D& pos) :Base(eType_Effect) {
+Effect::Effect(const char*name, const CVector2D& pos) :Base(eType_Effect) 
+{
     m_img = COPY_RESOURCE(name, CImage);
     m_pos = pos;
     m_img.SetCenter(192 / 2, 192 / 2);
