@@ -108,7 +108,14 @@ void Init(void)
 	ADD_RESOURCE("Word02", CImage::CreateImage("Image/Gimic/Word02.png"));
 	//単語03
 	ADD_RESOURCE("Word03", CImage::CreateImage("Image/Gimic/Word03.png"));
-	//以下ギミック
+	//以下ss用
+	//ssの背景
+	ADD_RESOURCE("ss_haikei", CImage::CreateImage("Image/ss/ss_haikei.png"));
+	//GameClearのロゴ
+	ADD_RESOURCE("ss_logo1", CImage::CreateImage("Image/ss/Clear_logo(1).png"));
+	//TyfPのロゴ
+	ADD_RESOURCE("ss_logo2", CImage::CreateImage("Image/ss/Clear_logo(2).png"));
+	//以下ギミック用
 	//棘
 	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));
 	//爆弾

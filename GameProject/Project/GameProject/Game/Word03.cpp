@@ -1,6 +1,6 @@
 #include "Word03.h"
 
-Word03::Word03(const CVector2D& pos) :Base(eType_Word)
+Word03::Word03(const CVector2D& pos) :Base(eType_Word03)
 {
 	m_word03 = COPY_RESOURCE("Word03", CImage);
 	m_word03.SetCenter(24, 12);

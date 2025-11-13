@@ -48,8 +48,6 @@
     <ClInclude Include="ss\ss_w05.h" />
     <ClInclude Include="ss\ss_w06.h" />
     <ClInclude Include="ss\ss_w07.h" />
-    <ClInclude Include="ss\ss_w08.h" />
-    <ClInclude Include="ss\ss_w09.h" />
     <ClInclude Include="Title\Title.h" />
   </ItemGroup>
   <ItemGroup>
@@ -82,8 +80,6 @@
     <ClCompile Include="ss\ss_w05.cpp" />
     <ClCompile Include="ss\ss_w06.cpp" />
     <ClCompile Include="ss\ss_w07.cpp" />
-    <ClCompile Include="ss\ss_w08.cpp" />
-    <ClCompile Include="ss\ss_w09.cpp" />
     <ClCompile Include="Title\Title.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

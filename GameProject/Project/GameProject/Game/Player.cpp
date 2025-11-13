@@ -125,7 +125,19 @@ void Player::Collision(Base* b)
 			b->SetKill();
 		}
 		break;
-	case eType_Word:
+	case eType_Word01:
+		if (Base::CollisionRect(this, b))
+		{
+			b->SetKill();
+		}
+		break;
+	case eType_Word02:
+		if (Base::CollisionRect(this, b))
+		{
+			b->SetKill();
+		}
+		break;
+	case eType_Word03:
 		if (Base::CollisionRect(this, b))
 		{
 			b->SetKill();

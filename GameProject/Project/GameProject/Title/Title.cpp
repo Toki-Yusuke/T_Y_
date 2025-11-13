@@ -1,6 +1,5 @@
 #include "Title.h"
 #include"../Game/Game.h"
-
 #include"../Gimic/Gimic.h"
 
 Title::Title():Base(eType_Scene)
@@ -21,6 +20,7 @@ void Title::Update()
 		Base::KillAll();
 		Base::Add(new Game());
 		Base::Add(new Gimic());
+		
 	}
 }
 

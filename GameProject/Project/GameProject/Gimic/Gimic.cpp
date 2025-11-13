@@ -40,9 +40,7 @@ void Gimic::Update()
 	if (!Base::FindObject(eType_B_botton) && !Base::FindObject(eType_B_wall))
 	{
 		//ê¬ï«01
-		Base::Add(new B_wall(CVector2D(98, 1764)));
-		//ê¬ï«02
-		Base::Add(new B_wall(CVector2D(49, 1568)));
+		Base::Add(new B_wall(CVector2D(98, 1764 - 98)));
 		//ê‘É{É^Éì
 		Base::Add(new R_botton(CVector2D(490, 1372)));
 		//ê‘ï«06

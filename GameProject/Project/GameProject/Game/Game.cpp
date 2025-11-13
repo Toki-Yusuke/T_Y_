@@ -16,8 +16,7 @@
 #include"../ss/ss_w05.h"
 #include"../ss/ss_w06.h"
 #include"../ss/ss_w07.h"
-#include"../ss/ss_w08.h"
-#include"../ss/ss_w09.h"
+
 
 
 Game::Game():Base(eType_Scene)
@@ -44,59 +43,63 @@ Game::Game():Base(eType_Scene)
 
 void Game::Update() 
 {
+	//ゲームオーバーへ
 	if (!Base::FindObject(eType_Player) && Base::FindObject(eType_Goal))
 	{
 		Base::KillAll();
 		Base::Add(new GameOver);
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//以下はゲームクリア
+	//1,2,3有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal)&&Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//2,3有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w01());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//1,3有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w02());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//1,2有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w03());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//3有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w04());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//2有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w05());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//1有
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w06());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	//全部無し
+	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w07());
 	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
+	else
 	{
-		Base::KillAll();
-		Base::Add(new ss_w08());
-	}
-	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal))
-	{
-		Base::KillAll();
-		Base::Add(new ss_w09());
+		return;
 	}
 }

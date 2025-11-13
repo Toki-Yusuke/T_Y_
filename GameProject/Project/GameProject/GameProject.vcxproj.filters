@@ -83,12 +83,6 @@
     <ClInclude Include="ss\ss_w07.h">
       <Filter>ss</Filter>
     </ClInclude>
-    <ClInclude Include="ss\ss_w08.h">
-      <Filter>ss</Filter>
-    </ClInclude>
-    <ClInclude Include="ss\ss_w09.h">
-      <Filter>ss</Filter>
-    </ClInclude>
     <ClInclude Include="Game\Word02.h">
       <Filter>Game</Filter>
     </ClInclude>
@@ -177,12 +171,6 @@
       <Filter>ss</Filter>
     </ClCompile>
     <ClCompile Include="ss\ss_w07.cpp">
-      <Filter>ss</Filter>
-    </ClCompile>
-    <ClCompile Include="ss\ss_w08.cpp">
-      <Filter>ss</Filter>
-    </ClCompile>
-    <ClCompile Include="ss\ss_w09.cpp">
       <Filter>ss</Filter>
     </ClCompile>
     <ClCompile Include="Game\Word02.cpp">

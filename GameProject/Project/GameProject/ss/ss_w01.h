@@ -3,7 +3,7 @@
 
 class ss_w01 :public Base 
 {
-	CImage m_ss_w01;
+	CImage m_select_word01;
 public:
 	ss_w01();
 	void Update();
