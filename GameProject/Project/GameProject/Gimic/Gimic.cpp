@@ -40,7 +40,7 @@ void Gimic::Update()
 	if (!Base::FindObject(eType_B_botton) && !Base::FindObject(eType_B_wall))
 	{
 		//青壁01
-		Base::Add(new B_wall(CVector2D(98, 1764 - 98)));
+		Base::Add(new B_wall(CVector2D(98, 1764 - 196)));
 		//赤ボタン
 		Base::Add(new R_botton(CVector2D(490, 1372)));
 		//赤壁06
@@ -57,5 +57,7 @@ void Gimic::Update()
 		Base::Add(new R_wall(CVector2D(784, 1666)));
 		//赤壁12
 		Base::Add(new R_wall(CVector2D(784, 1764)));
+		//棘(下段、突然)
+		Base::Add(new Sting(CVector2D(588, 1470)));
 	}
 }

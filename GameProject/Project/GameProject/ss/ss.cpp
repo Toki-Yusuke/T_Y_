@@ -11,11 +11,13 @@ ss::ss():Base(eType_Scene)
 	m_tyfp = COPY_RESOURCE("ss_logo2", CImage);
 	m_tyfp.SetSize(1080, 135);
 	m_tyfp.SetPos(450, 720);
+	m_cnt = 0;
 }
 
 void ss::Update() 
 {
-	if (PUSH(CInput::eButton5))
+	m_cnt++;
+	if (PUSH(CInput::eButton10) && m_cnt > 10)
 	{
 		Base::SetKill();
 		Base::Add(new Title());

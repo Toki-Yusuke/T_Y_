@@ -18,7 +18,7 @@ void Word02::Draw()
 {
 	m_word02.SetPos(GetScreenPos(m_pos));
 	m_word02.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void Word02::Collision(Base* b)

@@ -5,6 +5,8 @@ class ss_w05 :public Base
 {
 	CImage m_select_word01;
 	CImage m_select_word03;
+	CImage m_frame1;
+	CImage m_frame2;
 public:
 	ss_w05();
 	void Update();

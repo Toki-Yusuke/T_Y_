@@ -47,6 +47,8 @@ void Init(void)
 	CInput::SetButton(0, CInput::eMouseL, VK_LBUTTON);
 	CInput::SetButton(0, CInput::eMouseR, VK_RBUTTON);
 	CInput::SetButton(0, CInput::eMouseC, VK_MBUTTON);
+	CInput::SetButton(0, CInput::eButton11, '1');
+
 
 	//マウス非表示
 //	CInput::ShowCursor(false);
@@ -115,6 +117,10 @@ void Init(void)
 	ADD_RESOURCE("ss_logo1", CImage::CreateImage("Image/ss/Clear_logo(1).png"));
 	//TyfPのロゴ
 	ADD_RESOURCE("ss_logo2", CImage::CreateImage("Image/ss/Clear_logo(2).png"));
+	//枠
+	ADD_RESOURCE("frame", CImage::CreateImage("Image/ss/Frame.png"));
+	//赤丸
+	ADD_RESOURCE("R_circle", CImage::CreateImage("Image/ss/R_circle.png"));
 	//以下ギミック用
 	//棘
 	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));
