@@ -18,6 +18,7 @@ enum {
     eType_R_botton,
     eType_B_wall,
     eType_R_wall,
+    eType_Circle
 };
 
 //èdóÕâ¡ë¨ìx

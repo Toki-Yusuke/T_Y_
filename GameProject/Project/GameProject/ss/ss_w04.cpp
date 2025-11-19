@@ -1,4 +1,5 @@
 #include "ss_w04.h"
+#include"ss.h"
 
 ss_w04::ss_w04() :Base(eType_Scene)
 {
@@ -18,7 +19,11 @@ ss_w04::ss_w04() :Base(eType_Scene)
 
 void ss_w04::Update()
 {
-
+	if (PUSH(CInput::eButton10))
+	{
+		Base::SetKill();
+		Base::Add(new ss());
+	}
 }
 
 void ss_w04::Draw()

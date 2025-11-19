@@ -1,3 +1,4 @@
+//ƒQ[ƒ€ƒNƒŠƒA‰æ–Ê
 #include "ss.h"
 #include"../Title/Title.h"
 
