@@ -89,6 +89,9 @@
     <ClInclude Include="Game\Word03.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="ss\ss_w00.h">
+      <Filter>ss</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -178,6 +181,9 @@
     </ClCompile>
     <ClCompile Include="Game\Word03.cpp">
       <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ss\ss_w00.cpp">
+      <Filter>ss</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -81,6 +81,16 @@ public:
     /// <param name="b2">対象2</param>
     /// <returns></returns>
     static bool CollisionRect(Base* b1, Base* b2);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="p1">対象1座標</param>
+    /// <param name="r1">対象1矩形</param>
+    /// <param name="p2">対象2座標</param>
+    /// <param name="r2">対象2矩形</param>
+    /// <returns></returns>
+    static bool CollisionRect(const CVector2D& p1, const CRect& r1, const CVector2D& p2, const CRect& r2);
     /// <summary>
     /// 当たり判定矩形のデバッグ表示
     /// </summary>

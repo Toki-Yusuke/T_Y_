@@ -113,9 +113,15 @@ void Player::Collision(Base* b)
 		}
 		break;
 	case eType_Object:
-		if (Base::CollisionRect(this, b))
+		if (Base::CollisionRect(CVector2D(m_pos.x, m_pos_old.y), m_rect, b->m_pos, b->m_rect))
 		{
 			this->m_pos.x = m_pos_old.x;
+		}
+		if (Base::CollisionRect(CVector2D(m_pos_old.x, m_pos.y), m_rect, b->m_pos, b->m_rect))
+		{
+			this->m_pos.y = m_pos_old.y;
+			m_vec.y = 0;
+			m_is_ground = true;
 		}
 		break;
 	case eType_Enemy:
@@ -155,18 +161,27 @@ void Player::Collision(Base* b)
 			b->SetKill();
 		}
 	case eType_B_wall:
-		if (Base::CollisionRect(this, b))
+		if (Base::CollisionRect(CVector2D(m_pos.x,m_pos_old.y),m_rect,b->m_pos,b->m_rect))
 		{
 			this->m_pos.x = m_pos_old.x;
+		}
+		if (Base::CollisionRect(CVector2D(m_pos_old.x, m_pos.y), m_rect, b->m_pos, b->m_rect))
+		{
 			this->m_pos.y = m_pos_old.y;
 			m_vec.y = 0;
 			m_is_ground = true;
 		}
 		break;
 	case eType_R_wall:
-		if (Base::CollisionRect(this, b))
+		if (Base::CollisionRect(CVector2D(m_pos.x, m_pos_old.y), m_rect, b->m_pos, b->m_rect))
 		{
 			this->m_pos.x = m_pos_old.x;
+		}
+		if (Base::CollisionRect(CVector2D(m_pos_old.x, m_pos.y), m_rect, b->m_pos, b->m_rect))
+		{
+			this->m_pos.y = m_pos_old.y;
+			m_vec.y = 0;
+			m_is_ground = true;
 		}
 		break;
 	}

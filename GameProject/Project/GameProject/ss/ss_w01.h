@@ -3,9 +3,10 @@
 
 class ss_w01 :public Base 
 {
-	CImage m_select_word01;
-	CImage m_frame;
+	CImage m_haikei;
+	CImage m_next;
 	CFont m_text1;
+	int m_cnt;
 public:
 	ss_w01();
 	void Update();

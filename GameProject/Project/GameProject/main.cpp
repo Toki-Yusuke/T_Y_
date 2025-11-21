@@ -116,8 +116,16 @@ void Init(void)
 	ADD_RESOURCE("ss_logo1", CImage::CreateImage("Image/ss/Clear_logo(1).png"));
 	//TyfPÇÃÉçÉS
 	ADD_RESOURCE("ss_logo2", CImage::CreateImage("Image/ss/Clear_logo(2).png"));
-	//òg
-	ADD_RESOURCE("frame", CImage::CreateImage("Image/ss/Frame.png"));
+	//ss_w01ÇÃîwåi
+	ADD_RESOURCE("Word01_haikei", CImage::CreateImage("Image/ss/Word01_haikei.png"));
+	//ss_w02ÇÃîwåi
+	ADD_RESOURCE("Word02_haikei", CImage::CreateImage("Image/ss/Word02_haikei.png"));
+	//ss_w03ÇÃîwåi
+	ADD_RESOURCE("Word03_haikei", CImage::CreateImage("Image/ss/Word03_haikei.png"));
+	//éüÇ÷
+	ADD_RESOURCE("Next", CImage::CreateImage("Image/ss/Next.png"));
+	//èIóπ
+	ADD_RESOURCE("End", CImage::CreateImage("Image/ss/End.png"));
 	//à»â∫ÉMÉ~ÉbÉNóp
 	//ûô
 	ADD_RESOURCE("Sting", CImage::CreateImage("Image/Gimic/Sting.png"));

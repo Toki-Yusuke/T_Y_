@@ -50,49 +50,49 @@ void Game::Update()
 		Base::Add(new GameOver);
 	}
 	//以下はゲームクリア
-	//1,2,3有
+	//ssへ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal)&&Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss());
 	}
-	//2,3有
+	//ss_w01へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w01());
 	}
-	//1,3有
+	//ss_w02へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w02());
 	}
-	//1,2有
+	//ss_w03へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w03());
 	}
-	//3有
+	//ss_w04へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w04());
 	}
-	//2有
+	//ss_w05へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w05());
 	}
-	//1有
+	//ss_w06へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();
 		Base::Add(new ss_w06());
 	}
-	//全部無し
+	//ss_w07へ
 	else if (!Base::FindObject(eType_Player) && !Base::FindObject(eType_Goal) && !Base::FindObject(eType_Word01) && !Base::FindObject(eType_Word02) && !Base::FindObject(eType_Word03))
 	{
 		Base::KillAll();

@@ -8,17 +8,20 @@ ss::ss():Base(eType_Scene)
 	m_haikei.SetSize(1980, 1080);
 	m_gc = COPY_RESOURCE("ss_logo1", CImage);
 	m_gc.SetSize(886, 211);
-	m_gc.SetPos(547, 260);
+	m_gc.SetPos(547, 329);
 	m_tyfp = COPY_RESOURCE("ss_logo2", CImage);
 	m_tyfp.SetSize(1080, 135);
-	m_tyfp.SetPos(450, 720);
+	m_tyfp.SetPos(450, 570);
+	m_end = COPY_RESOURCE("End", CImage);
+	m_end.SetSize(644, 92);
+	m_end.SetPos(668, 852);
 	m_cnt = 0;
 }
 
 void ss::Update() 
 {
 	m_cnt++;
-	if (PUSH(CInput::eButton10) && m_cnt > 10)
+	if (PUSH(CInput::eButton10) && m_cnt > 2)
 	{
 		Base::SetKill();
 		Base::Add(new Title());
@@ -30,4 +33,5 @@ void ss::Draw()
 	m_haikei.Draw();
 	m_gc.Draw();
 	m_tyfp.Draw();
+	m_end.Draw();
 }

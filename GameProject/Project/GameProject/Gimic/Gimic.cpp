@@ -16,7 +16,7 @@ Gimic::Gimic() :Base(eType_Scene)
 	//™(‰º’i¶)
 	Base::Add(new Sting(CVector2D(2500, 1974)));
 	//”š’e
-	Base::Add(new Bom(CVector2D(3000, 763)));
+	Base::Add(new Bom(CVector2D(3500, 400)));
 	//‰ó‚ê‚éŠâ(ã)
 	Base::Add(new B_rock(CVector2D(3430, 687)));
 	//‰ó‚ê‚éŠâ(‰º)

@@ -41,6 +41,7 @@
     <ClInclude Include="Gimic\Sting.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="ss\ss.h" />
+    <ClInclude Include="ss\ss_w00.h" />
     <ClInclude Include="ss\ss_w01.h" />
     <ClInclude Include="ss\ss_w02.h" />
     <ClInclude Include="ss\ss_w03.h" />
@@ -73,6 +74,7 @@
     <ClCompile Include="Gimic\Sting.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ss\ss.cpp" />
+    <ClCompile Include="ss\ss_w00.cpp" />
     <ClCompile Include="ss\ss_w01.cpp" />
     <ClCompile Include="ss\ss_w02.cpp" />
     <ClCompile Include="ss\ss_w03.cpp" />

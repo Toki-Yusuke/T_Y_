@@ -65,6 +65,23 @@ bool Base::CollisionRect(Base* b1, Base* b2)
 
     return false;
 }
+bool Base::CollisionRect(const CVector2D& p1, const CRect& r1, const CVector2D& p2, const CRect& r2)
+{
+    CRect rect1 = CRect(
+        p1.x + r1.m_left,
+        p1.y + r1.m_top,
+        p1.x + r1.m_right,
+        p1.y + r1.m_bottom);
+    CRect rect2 = CRect(
+        p2.x + r2.m_left,
+        p2.y + r2.m_top,
+        p2.x + r2.m_right,
+        p2.y + r2.m_bottom);
+    if (rect1.m_left <= rect2.m_right && rect1.m_right >= rect2.m_left &&
+        rect1.m_top <= rect2.m_bottom && rect1.m_bottom >= rect2.m_top)
+        return true;
+    return false;
+}
 void Base::DrawRect()
 {
     //デバッグ用　矩形の表示

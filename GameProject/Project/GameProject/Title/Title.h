@@ -7,6 +7,8 @@ class Title:public Base
 	CImage m_title;
 	CImage m_moji;
 	int m_cnt;
+	int m_fontstate;
+	float m_alpha;
 public:
 	Title();
 	void Update();
