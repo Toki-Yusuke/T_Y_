@@ -23,6 +23,6 @@ void ss_w02::Update()
 void ss_w02::Draw()
 {
 	m_haikei.Draw();
-	m_text1.Draw(400, 800, 1, 1, 1, "2");
 	m_next.Draw();
+	m_text1.Draw(400, 800, 1, 1, 1, "2");
 }

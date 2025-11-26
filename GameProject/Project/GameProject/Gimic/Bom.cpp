@@ -27,7 +27,7 @@ void Bom::Draw()
 {
 	m_bom.SetPos(GetScreenPos(m_pos));
 	m_bom.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void Bom::Move()

@@ -18,7 +18,7 @@ void Sting::Draw()
 {
 	m_sting.SetPos(GetScreenPos(m_pos));
 	m_sting.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void Sting::Collision(Base* b) 

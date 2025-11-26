@@ -12,7 +12,7 @@ Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
-	m_rect = CRect(-14, 0, 24, 92);
+	m_rect = CRect(-14, 0, 24, 85);
 }
 
 void Player::StateIdle()
@@ -83,7 +83,7 @@ void Player::Draw()
 {
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void Player::Takedamge(int dmg)

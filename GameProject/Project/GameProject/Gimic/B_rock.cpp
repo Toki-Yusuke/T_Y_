@@ -16,7 +16,7 @@ void B_rock::Draw()
 {
 	m_b_rock.SetPos(GetScreenPos(m_pos));
 	m_b_rock.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void B_rock::Collision(Base* b)

@@ -16,7 +16,7 @@ void B_botton::Draw()
 {
 	m_b_botton.SetPos(GetScreenPos(m_pos));
 	m_b_botton.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void B_botton::Collision(Base* b)

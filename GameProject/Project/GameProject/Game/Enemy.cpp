@@ -11,7 +11,7 @@ Enemy::Enemy(const CVector2D& pos, bool flip) :Base(eType_Enemy)
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
-	m_rect = CRect(0, 0, 96, 96);
+	m_rect = CRect(0, 0, 96, 85);
 }
 
 void Enemy::StateIdle()
@@ -90,7 +90,7 @@ void Enemy::Draw()
 {
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void Enemy::Takedamage(int dmg)

@@ -16,7 +16,7 @@ void B_wall::Draw()
 {
 	m_b_wall.SetPos(GetScreenPos(m_pos));
 	m_b_wall.Draw();
-	DrawRect();
+	//DrawRect();
 }
 
 void B_wall::Collision(Base* b) 
