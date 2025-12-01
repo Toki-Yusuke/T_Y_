@@ -2,13 +2,13 @@
 #include"ss.h"
 
 ss_w03::ss_w03() :Base(eType_Scene)
-, m_text1("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text2("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text3("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text4("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text5("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text6("C:\\Windows\\Fonts\\msgothic.ttc", 90)
-, m_text7("C:\\Windows\\Fonts\\msgothic.ttc", 90)
+, m_text1("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text2("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text3("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text4("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text5("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text6("C:\\Windows\\Fonts\\msgothic.ttc", 60)
+, m_text7("C:\\Windows\\Fonts\\msgothic.ttc", 60)
 {
 	m_haikei = COPY_RESOURCE("Word03_haikei", CImage);
 	m_next = COPY_RESOURCE("Next", CImage);
