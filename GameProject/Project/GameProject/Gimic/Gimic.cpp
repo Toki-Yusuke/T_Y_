@@ -12,15 +12,17 @@ Gimic::Gimic() :Base(eType_Scene)
 	//棘(上段)
 	Base::Add(new Sting(CVector2D(814, 799)));
 	//棘(下段右)
-	Base::Add(new Sting(CVector2D(3000, 1974)));
+	Base::Add(new Sting(CVector2D(2950, 1974)));
 	//棘(下段左)
-	Base::Add(new Sting(CVector2D(2500, 1974)));
+	Base::Add(new Sting(CVector2D(2450, 1974)));
 	//爆弾
 	Base::Add(new Bom(CVector2D(3500, 400)));
 	//壊れる岩(上)
 	Base::Add(new B_rock(CVector2D(3430, 687)));
 	//壊れる岩(下)
 	Base::Add(new B_rock(CVector2D(3430, 785)));
+	//棘(穴の底)
+	Base::Add(new Sting(CVector2D(3724, 1176)));
 	//青ボタン
 	Base::Add(new B_botton(CVector2D(880, 1960)));
 	//赤壁01

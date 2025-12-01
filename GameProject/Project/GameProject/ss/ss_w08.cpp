@@ -1,7 +1,7 @@
-#include "ss_w03.h"
-#include"ss.h"
+#include "ss_w08.h"
+#include"ss_w09.h"
 
-ss_w03::ss_w03() :Base(eType_Scene)
+ss_w08::ss_w08() :Base(eType_Scene)
 , m_text1("C:\\Windows\\Fonts\\msgothic.ttc", 90)
 , m_text2("C:\\Windows\\Fonts\\msgothic.ttc", 90)
 , m_text3("C:\\Windows\\Fonts\\msgothic.ttc", 90)
@@ -17,17 +17,17 @@ ss_w03::ss_w03() :Base(eType_Scene)
 	m_cnt = 0;
 }
 
-void ss_w03::Update()
+void ss_w08::Update()
 {
 	m_cnt++;
 	if (PUSH(CInput::eButton10) && m_cnt > 2)
 	{
 		Base::SetKill();
-		Base::Add(new ss());
+		Base::Add(new ss_w09());
 	}
 }
 
-void ss_w03::Draw()
+void ss_w08::Draw()
 {
 	m_haikei.Draw();
 	m_next.Draw();

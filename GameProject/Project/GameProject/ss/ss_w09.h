@@ -1,7 +1,7 @@
 #pragma once
 #include"../Base/Base.h"
 
-class ss_w02 :public Base
+class ss_w09 :public Base
 {
 	CImage m_haikei;
 	CImage m_next;
@@ -14,7 +14,7 @@ class ss_w02 :public Base
 	CFont m_text7;
 	int m_cnt;
 public:
-	ss_w02();
+	ss_w09();
 	void Update();
 	void Draw();
 };

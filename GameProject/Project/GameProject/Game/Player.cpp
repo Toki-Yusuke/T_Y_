@@ -86,10 +86,6 @@ void Player::Draw()
 	//DrawRect();
 }
 
-void Player::Takedamge(int dmg)
-{
-}
-
 void Player::Collision(Base* b)
 {
 

@@ -114,7 +114,7 @@ void Init(void)
 	ADD_RESOURCE("ss_haikei", CImage::CreateImage("Image/ss/ss_haikei.png"));
 	//GameClearÇÃÉçÉS
 	ADD_RESOURCE("ss_logo1", CImage::CreateImage("Image/ss/Clear_logo(1).png"));
-	//TyfPÇÃÉçÉS
+	//Thank you for PlayingÇÃÉçÉS
 	ADD_RESOURCE("ss_logo2", CImage::CreateImage("Image/ss/Clear_logo(2).png"));
 	//ss_w01ÇÃîwåi
 	ADD_RESOURCE("Word01_haikei", CImage::CreateImage("Image/ss/Word01_haikei.png"));
@@ -122,6 +122,8 @@ void Init(void)
 	ADD_RESOURCE("Word02_haikei", CImage::CreateImage("Image/ss/Word02_haikei.png"));
 	//ss_w03ÇÃîwåi
 	ADD_RESOURCE("Word03_haikei", CImage::CreateImage("Image/ss/Word03_haikei.png"));
+	//ss_w09ÇÃîwåi
+	ADD_RESOURCE("Fin_haikei", CImage::CreateImage("Image/ss/Fin.png"));
 	//éüÇ÷
 	ADD_RESOURCE("Next", CImage::CreateImage("Image/ss/Next.png"));
 	//èIóπ
@@ -143,7 +145,8 @@ void Init(void)
 	ADD_RESOURCE("R_botton", CImage::CreateImage("Image/Gimic/R_botton.png"));
 	//ê‘ï«
 	ADD_RESOURCE("R_wall", CImage::CreateImage("Image/Gimic/R_wall.png"));
-	
+	//à»â∫ÉQÅ[ÉÄâπ
+
 	Base::Add(new Title());
 }
 
