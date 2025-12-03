@@ -34,7 +34,7 @@ void Bom::Move()
 {
 	const float move_speed = 6;
 	Base* player = Base::FindObject(eType_Player);
-	switch (player->m_pos.x > m_pos.x + 1 ) 
+	switch (player->m_pos.x > m_pos.x + 1) 
 	{
 	case true:
 		m_pos.x += -move_speed;
@@ -43,6 +43,7 @@ void Bom::Move()
 		m_pos.x += move_speed;
 		break;
 	}
+
 }
 
 void Bom::B_Effect() 
@@ -54,7 +55,8 @@ void Bom::Collision(Base* b)
 {
 	switch (b->m_type) {
 	case eType_Field:
-		if (Map* m = dynamic_cast<Map*>(b)) {
+		if (Map* m = dynamic_cast<Map*>(b))
+		{
 			int t;
 			t = m->CollisionRect(CVector2D(m_pos.x, m_pos_old.y), m_rect);
 			if (t != 0) {
