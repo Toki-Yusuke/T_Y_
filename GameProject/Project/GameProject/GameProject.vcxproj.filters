@@ -98,6 +98,9 @@
     <ClInclude Include="ss\ss_w09.h">
       <Filter>ss</Filter>
     </ClInclude>
+    <ClInclude Include="Game\Sousa.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -196,6 +199,9 @@
     </ClCompile>
     <ClCompile Include="ss\ss_w09.cpp">
       <Filter>ss</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Sousa.cpp">
+      <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

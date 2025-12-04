@@ -91,6 +91,10 @@ void Init(void)
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Character/Enemy.png"));
 	//フィールドの背景
 	ADD_RESOURCE("f_Haikei", CImage::CreateImage("Image/Field/Title.Haikei.png"));
+	//左右キー
+	ADD_RESOURCE("LR", CImage::CreateImage("Image/Field/keybord_LR.png"));
+	//スペースキー
+	ADD_RESOURCE("Space", CImage::CreateImage("Image/Field/keybord_Space.png"));
 	//タイトル
 	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title/Title_Logo.png"));
 	//タイトルの背景

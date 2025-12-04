@@ -18,7 +18,18 @@ void Enemy::StateIdle()
 {
 
 	bool move_flag = false;
-	const float move_speed = 3.5;
+	float move_speed;
+	if (!Base::FindObject(eType_Word01) || !Base::FindObject(eType_Word02)) {
+		move_speed = 4.0;
+	}
+	else if (!Base::FindObject(eType_Word01) || !Base::FindObject(eType_Word02) || !Base::FindObject(eType_Word03))
+	{
+		move_speed = 4.5;
+	}
+	else
+	{
+		move_speed = 3.5;
+	}
 	//ˆÚ“®
 	Base* player = Base::FindObject(eType_Player);
 	if (player) 

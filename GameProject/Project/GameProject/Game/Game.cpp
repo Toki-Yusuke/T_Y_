@@ -7,6 +7,7 @@
 #include"Word01.h"
 #include"Word02.h"
 #include"Word03.h"
+#include"Sousa.h"
 #include"../GameOver/GameOver.h"
 #include"../ss/ss.h"
 #include"../ss/ss_w01.h"
@@ -39,6 +40,8 @@ Game::Game():Base(eType_Scene)
 	Base::Add(new Field);
 	//ステージ
 	Base::Add(new Map(1));
+	//操作キー
+	Base::Add(new Sousa);
 }
 
 void Game::Update() 
