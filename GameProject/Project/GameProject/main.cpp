@@ -149,7 +149,7 @@ void Init(void)
 	ADD_RESOURCE("R_botton", CImage::CreateImage("Image/Gimic/R_botton.png"));
 	//ê‘ï«
 	ADD_RESOURCE("R_wall", CImage::CreateImage("Image/Gimic/R_wall.png"));
-	//à»â∫ÉQÅ[ÉÄâπ
+	//à»â∫ÉQÅ[ÉÄBGM
 
 	Base::Add(new Title());
 }

@@ -11,25 +11,14 @@ Enemy::Enemy(const CVector2D& pos, bool flip) :Base(eType_Enemy)
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
-	m_rect = CRect(0, 0, 96, 85);
+	m_rect = CRect(0, 0, 80, 80);
 }
 
 void Enemy::StateIdle()
 {
 
 	bool move_flag = false;
-	float move_speed;
-	if (!Base::FindObject(eType_Word01) || !Base::FindObject(eType_Word02)) {
-		move_speed = 4.0;
-	}
-	else if (!Base::FindObject(eType_Word01) || !Base::FindObject(eType_Word02) || !Base::FindObject(eType_Word03))
-	{
-		move_speed = 4.5;
-	}
-	else
-	{
-		move_speed = 3.5;
-	}
+	float move_speed = 4.5;
 	//ˆÚ“®
 	Base* player = Base::FindObject(eType_Player);
 	if (player) 

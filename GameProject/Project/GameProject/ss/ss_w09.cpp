@@ -7,7 +7,7 @@ ss_w09::ss_w09() :Base(eType_Scene)
 	m_haikei = COPY_RESOURCE("Fin_haikei", CImage);
 	m_next = COPY_RESOURCE("Next", CImage);
 	m_next.SetSize(648, 92);
-	m_next.SetPos(666, 950);
+	m_next.SetPos(666, 900);
 	m_cnt = 0;
 }
 
