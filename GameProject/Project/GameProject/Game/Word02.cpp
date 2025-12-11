@@ -9,11 +9,6 @@ Word02::Word02(const CVector2D& pos) :Base(eType_Word02)
 	m_rect = CRect(-24, 12, 24, -12);
 }
 
-void Word02::Update()
-{
-
-}
-
 void Word02::Draw()
 {
 	m_word02.SetPos(GetScreenPos(m_pos));

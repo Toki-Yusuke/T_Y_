@@ -31,9 +31,9 @@ Game::Game():Base(eType_Scene)
 	//ƒS[ƒ‹
 	Base::Add(new Goal(CVector2D(2550, 1200)));
 	//’PŒê‡@
-	Base::Add(new Word01(CVector2D(552, 835)));
+	Base::Add(new Word01(CVector2D(540, 833)));
 	//’PŒê‡A
-	Base::Add(new Word02(CVector2D(3700, 815)));
+	Base::Add(new Word02(CVector2D(3676, 784)));
 	//’PŒê‡B
 	Base::Add(new Word03(CVector2D(980, 1400)));
 	//”wŒi

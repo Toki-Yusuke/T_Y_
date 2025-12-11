@@ -18,7 +18,7 @@ void Enemy::StateIdle()
 {
 
 	bool move_flag = false;
-	float move_speed = 4.5;
+	float move_speed = 4.2;
 	//ˆÚ“®
 	Base* player = Base::FindObject(eType_Player);
 	if (player) 
@@ -91,10 +91,6 @@ void Enemy::Draw()
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.Draw();
 	//DrawRect();
-}
-
-void Enemy::Takedamage(int dmg)
-{
 }
 
 void Enemy::Collision(Base* b)

@@ -2,7 +2,6 @@
 
 static TexAnim _bomb_anim[] = 
 {
-
             { 0,4 },
             { 1,4 },
             { 2,4 },

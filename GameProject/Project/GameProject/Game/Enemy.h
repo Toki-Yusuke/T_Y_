@@ -26,6 +26,5 @@ public:
 	Enemy(const CVector2D& pos, bool flip);
 	void Update();
 	void Draw();
-	void Takedamage(int dmg);
 	void Collision(Base* b);
 };

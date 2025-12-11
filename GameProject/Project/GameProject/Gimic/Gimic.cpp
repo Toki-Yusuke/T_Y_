@@ -9,7 +9,9 @@
 
 Gimic::Gimic() :Base(eType_Scene)
 {
-	//棘(上段)
+	//棘(上段左端)
+	Base::Add(new Sting(CVector2D(784 - 196, 686)));
+	//棘(上段左から2番目)
 	Base::Add(new Sting(CVector2D(814, 799)));
 	//棘(上段の右左端)
 	Base::Add(new Sting(CVector2D(2940, 799)));
@@ -36,9 +38,9 @@ Gimic::Gimic() :Base(eType_Scene)
 	//壊れる岩(下)
 	Base::Add(new B_rock(CVector2D(3430, 785)));
 	//棘(穴の底)
-	Base::Add(new Sting(CVector2D(3724, 980)));
+	Base::Add(new Sting(CVector2D(3732, 980)));
 	//青ボタン
-	Base::Add(new B_botton(CVector2D(880, 1960)));
+	Base::Add(new B_botton(CVector2D(890, 1962)));
 	//赤壁01
 	Base::Add(new R_wall(CVector2D(1078, 1078)));
 	//赤壁02

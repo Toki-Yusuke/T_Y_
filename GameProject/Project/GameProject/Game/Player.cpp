@@ -12,12 +12,11 @@ Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
-	m_rect = CRect(-14, 0, 24, 85);
+	m_rect = CRect(-18, 0, 18, 82);
 }
 
 void Player::StateIdle()
 {
-	
 	const float jump_pow = 15;
 	bool move_flag = false;
 	const float move_speed = 6;
