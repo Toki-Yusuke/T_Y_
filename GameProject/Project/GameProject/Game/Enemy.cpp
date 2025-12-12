@@ -18,7 +18,7 @@ void Enemy::StateIdle()
 {
 
 	bool move_flag = false;
-	float move_speed = 4.2;
+	const float move_speed = 4.2;
 	//ˆÚ“®
 	Base* player = Base::FindObject(eType_Player);
 	if (player) 

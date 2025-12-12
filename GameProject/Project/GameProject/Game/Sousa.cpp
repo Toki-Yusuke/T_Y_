@@ -1,6 +1,6 @@
 #include "Sousa.h"
 
-Sousa::Sousa() :Base(eType_Field), m_text("C:\\Windows\\Fonts\\msgothic.ttc", 20)
+Sousa::Sousa() :Base(eType_Field), m_text("C:\\Windows\\Fonts\\msgothic.ttc", 30)
 
 {
 	m_sayuu = COPY_RESOURCE("LR", CImage);
