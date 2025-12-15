@@ -29,7 +29,7 @@ Game::Game():Base(eType_Scene)
 	//“G(‰E)
 	Base::Add(new Enemy(CVector2D(2000, 785), true));
 	//ƒS[ƒ‹
-	Base::Add(new Goal(CVector2D(2550, 1200)));
+	Base::Add(new Goal(CVector2D(2452, 1200)));
 	//’PŒê‡@
 	Base::Add(new Word01(CVector2D(540, 833)));
 	//’PŒê‡A

@@ -6,13 +6,13 @@
 Player::Player(const CVector2D& pos, bool flip) :Base(eType_Player)
 {
 	m_img = COPY_RESOURCE("Player", CImage);
-	m_img.SetSize(40, 96);
+	m_img.SetSize(32, 72);
 	m_img.SetCenter(0, 0);
 	m_pos_old = m_pos = pos;
 	m_is_ground = true;
 	m_state = eState_Idle;
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
-	m_rect = CRect(0, 0, 40, 96);
+	m_rect = CRect(0, 0, 40, 72);
 }
 
 void Player::StateIdle()
