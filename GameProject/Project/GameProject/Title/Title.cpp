@@ -6,9 +6,9 @@ Title::Title():Base(eType_Scene)
 {
 	m_haikei = COPY_RESOURCE("t_Haikei", CImage);
 	m_title = COPY_RESOURCE("Title", CImage);
+	m_moji = COPY_RESOURCE("Moji", CImage);
 	m_title.SetSize(1000, 300);
 	m_title.SetPos(480, 200);
-	m_moji = COPY_RESOURCE("Moji", CImage);
 	m_moji.SetSize(500, 150);
 	m_moji.SetPos(700, 800);
 	m_cnt = 0;
