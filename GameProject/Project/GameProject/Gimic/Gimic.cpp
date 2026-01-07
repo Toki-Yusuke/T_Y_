@@ -9,32 +9,32 @@
 
 Gimic::Gimic() :Base(eType_Scene)
 {
-	//棘(上段左上)
+	//棘(スタート直後の階段真下)
 	Base::Add(new Sting(CVector2D(596, 694)));
-	//棘(上段左下)
+	//棘(上段左上のスタート付近)
 	Base::Add(new Sting(CVector2D(814, 799)));
-	//棘(上段右左)
+	//棘(上段右上の地面の上の左)
 	Base::Add(new Sting(CVector2D(2940, 799)));
-	//棘(上段右右)
+	//棘(上段右上の地面の上の右)
 	Base::Add(new Sting(CVector2D(3046, 799)));
-	//棘(下段下右)
-	Base::Add(new Sting(CVector2D(2950, 1974)));
-	//棘(下段下右)
-	Base::Add(new Sting(CVector2D(2950, 1884)));
-	//棘(下段下左)
-	Base::Add(new Sting(CVector2D(2450, 1974)));
-	//棘(下段上右)
-	Base::Add(new Sting(CVector2D(2650, 1884)));
-	//棘(下段上左)
-	Base::Add(new Sting(CVector2D(2200, 1884)));
-	//棘(下段下中央)
-	Base::Add(new Sting(CVector2D(2450, 1884)));
-	//棘(段の頭上)
-	Base::Add(new Sting(CVector2D(3340, 1255)));
 	//棘(穴の底左)
 	Base::Add(new Sting(CVector2D(3634, 988)));
 	//棘(穴の底右)
 	Base::Add(new Sting(CVector2D(3732, 988)));
+	//棘(下段の左から1列目)
+	Base::Add(new Sting(CVector2D(2200, 1884)));
+	//棘(下段の左から2列目の上)
+	Base::Add(new Sting(CVector2D(2450, 1884)));
+	//棘(下段の左から2列目の下)
+	Base::Add(new Sting(CVector2D(2450, 1974)));
+	//棘(下段の左から3列目)
+	Base::Add(new Sting(CVector2D(2650, 1884)));
+	//棘(下段の左から4列目の上)
+	Base::Add(new Sting(CVector2D(2950, 1884)));
+	//棘(下段の左から4列目の下)
+	Base::Add(new Sting(CVector2D(2950, 1974)));
+	//棘(段の頭上)
+	Base::Add(new Sting(CVector2D(3340, 1255)));
 	//爆弾
 	Base::Add(new Bom(CVector2D(3500, 400)));
 	//壊れる岩(上)
@@ -77,11 +77,11 @@ void Gimic::Update()
 		Base::Add(new R_wall(CVector2D(784, 1666)));
 		//赤壁12
 		Base::Add(new R_wall(CVector2D(784, 1764)));
-		//棘01(下段、突然)
+		//棘(赤ボタンの右下)
 		Base::Add(new Sting(CVector2D(588, 1484)));
-		//棘02(下段、突然)
+		//棘(青ボタン後の左端)
 		Base::Add(new Sting(CVector2D(196, 1974)));
-		//棘03(下段、突然)
+		//棘(壁に埋まっている)
 		Base::Add(new Sting(CVector2D(350, 1582)));
 	}
 }
